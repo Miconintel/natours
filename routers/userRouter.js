@@ -13,7 +13,7 @@ const {
   getMe,
   uploadUserPhoto,
   resizeUserPhoto,
-} = require('../controller/file2');
+} = require('../controller/userController');
 
 const {
   signUp,
