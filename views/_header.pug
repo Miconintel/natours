@@ -1,0 +1,15 @@
+header.header 
+  nav.nav.nav--tours 
+    a.nav__el(href='/') All tours
+    //- with a div u can either add a div or simpy use a dot
+  .header__logo
+    img(src='/img/logo-white.png' alt='Natours logo')
+  nav.nav.nav--user 
+    if user
+      a.nav__el.nav__el--logout logout
+      a.nav__el(href='/me')
+        img.nav__user-img(src=`/img/users/${user.photo}` alt=`${user.name}`)
+        span= user.name.split(' ')[0] 
+    else
+      a.nav__el.mybtn(href='/login') log in
+      a.nav__el.nav__el-cta Sign up
