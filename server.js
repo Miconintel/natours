@@ -1,14 +1,14 @@
 const mongoose = require('mongoose');
 const dotenv = require('dotenv');
 dotenv.config({ path: `./config.env` });
+// if an env variable is set manually before running the App, it ovewrites any other varible set by dotenv. when it sees a  variable with same name it skips it. simply because this variables are constant variables.
 
 process.on('uncaughtException', (err) => {
   console.log('shutting down exception error');
   console.log(err.name, err.message);
-
   process.exit(1);
 });
-const app = require('./app.js');
+const app = require('app');
 
 console.log(`${process.env.NODE_ENV} from server.js`);
 const DB = process.env.DATABASE.replace(
