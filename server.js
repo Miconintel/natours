@@ -8,7 +8,7 @@ process.on('uncaughtException', (err) => {
   console.log(err.name, err.message);
   process.exit(1);
 });
-const app = require('app');
+const app = require('./app');
 
 console.log(`${process.env.NODE_ENV} from server.js`);
 const DB = process.env.DATABASE.replace(
