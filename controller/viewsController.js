@@ -4,7 +4,6 @@ const Tour = require('../models/tourModel');
 const Booking = require('../models/bookingModel');
 const catchAsync = require('../utilities/catchAsync');
 const User = require('../models/userModel');
-const { set } = require('../app');
 
 exports.base = async (request, response, next) => {
   response.status(200).render('base', {
