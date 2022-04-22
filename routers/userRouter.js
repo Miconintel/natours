@@ -23,7 +23,7 @@ const {
   updatePassword,
   protect,
   logout,
-} = require('./../controller/authController');
+} = require('../controller/authController');
 
 const router = express.Router();
 // console.log(router);

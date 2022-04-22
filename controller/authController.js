@@ -1,10 +1,10 @@
 const { promisify } = require('util');
 const crypto = require('crypto');
-const User = require('./../models/userModel');
-const catchAsync = require('./../utilities/catchAsync');
+const User = require('../models/userModel');
+const catchAsync = require('../utilities/catchAsync');
 const jwt = require('jsonwebtoken');
-const AppError = require('./../utilities/appError');
-const Email = require('./../utilities/newEmail');
+const AppError = require('../utilities/appError');
+const Email = require('../utilities/newEmail');
 
 // CONTROLLERS HAS ACCES TO INFOS COMING FROM THE ROUTE BEING ACCESE, ON THE BODY, COOKIES, ORIGINAL URL, OR PARAMETERS params, ueries SPECIFIED ON THE ROUTE
 

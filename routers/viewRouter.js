@@ -7,11 +7,11 @@ const {
   getAccount,
   updateUserData,
   getMyTours,
-} = require('./../controller/viewsController');
-const { protect, isLoggedIn } = require('./../controller/authController');
+} = require('../controller/viewsController');
+const { protect, isLoggedIn } = require('../controller/authController');
 const {
   createBookingcheckout,
-} = require('./../controller/bookingController');
+} = require('../controller/bookingController');
 
 const router = express.Router({ mergeParams: true });
 

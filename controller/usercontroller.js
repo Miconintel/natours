@@ -1,9 +1,9 @@
-const catchAsync = require('./../utilities/catchAsync');
-const AppError = require('./../utilities/appError');
+const catchAsync = require('../utilities/catchAsync');
+const AppError = require('../utilities/appError');
 const handlerFactory = require('./handlerFactory');
 const multer = require('multer');
 const sharp = require('sharp');
-const User = require('./../models/userModel');
+const User = require('../models/userModel');
 
 // setting upmulter to upload image
 // here we are saving in a disk, but then we can save it in memory and read it afterwards to resize it

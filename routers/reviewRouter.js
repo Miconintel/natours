@@ -2,7 +2,7 @@ const express = require('express');
 const {
   protect,
   authorizeAdmin,
-} = require('./../controller/authController');
+} = require('../controller/authController');
 const {
   getAllReviews,
   createReviews,
@@ -10,7 +10,7 @@ const {
   updateReviews,
   setTourIds,
   getSingleReview,
-} = require('./../controller/reviewController');
+} = require('../controller/reviewController');
 
 const router = express.Router({ mergeParams: true });
 

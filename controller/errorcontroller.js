@@ -1,6 +1,6 @@
 const { request } = require('express');
-const res = require('express/lib/response');
-const AppError = require('./../utilities/appError');
+
+const AppError = require('../utilities/appError');
 
 const handleCastErrorDb = (err) => {
   const message = `we cannot find the ${err.path} ${err.value} ${err.name}`;

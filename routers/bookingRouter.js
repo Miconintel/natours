@@ -2,7 +2,7 @@ const express = require('express');
 const {
   protect,
   authorizeAdmin,
-} = require('./../controller/authController');
+} = require('../controller/authController');
 const {
   getCheckoutSession,
   getAllBookings,
@@ -10,7 +10,7 @@ const {
   updateBooking,
   deleteBooking,
   createBooking,
-} = require('./../controller/bookingController');
+} = require('../controller/bookingController');
 
 const router = express.Router();
 router.use(protect);

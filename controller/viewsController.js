@@ -1,9 +1,9 @@
 const Review = require('../models/reviewModel');
 const AppError = require('../utilities/appError');
-const Tour = require('./../models/tourModel');
-const Booking = require('./../models/bookingModel');
-const catchAsync = require('./../utilities/catchAsync');
-const User = require('./../models/userModel');
+const Tour = require('../models/tourModel');
+const Booking = require('../models/bookingModel');
+const catchAsync = require('../utilities/catchAsync');
+const User = require('../models/userModel');
 const { set } = require('../app');
 
 exports.base = async (request, response, next) => {
