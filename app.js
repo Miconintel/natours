@@ -288,6 +288,6 @@ app.all('*', (request, response, next) => {
 app.use(errorController);
 // listening
 
-// console.log(app);
+console.log(app);
 
 module.exports = app;
