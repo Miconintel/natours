@@ -16,7 +16,7 @@ const compression = require('compression');
 const tourRouter = require('./routers/tourRouter');
 const userRouter = require('./routers/userRouter');
 const reviewRouter = require('./routers/reviewRouter');
-const errorController = require('./controller/errorcontroller');
+const errorController = require('./controller/errorController');
 const viewRouter = require('./routers/viewRouter');
 const bookingRouter = require('./routers/bookingRouter');
 // BASICALLY EXPRESS JS IS A FRAMEWORK THAT USES ASYNCHRONOUS MEANS TO RUN CODES WHEN YO CREATE AN APP, U CREATE AN APP OBJECT, U STILL RUN METHODS THAT HAPPEN ASYNCHRONOUSLY.
