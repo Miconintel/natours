@@ -1,3 +1,3 @@
 #natours Application
 
-Built using all the information we have
+Built using MERN STACK
